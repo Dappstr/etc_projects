@@ -67,9 +67,7 @@ int main(int argc, char* argv[])
                 indx = 0;
             }
         }
-
     }
-    
 
     file.close();
     return 0;
