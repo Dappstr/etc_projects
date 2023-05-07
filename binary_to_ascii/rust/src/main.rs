@@ -76,6 +76,5 @@ fn main() -> Result<()> {
         }
     }
 
-    //println!("Translated: {}", formatted_content);
-    Ok(())
+        Ok(())
 }
