@@ -52,9 +52,9 @@ fn main() -> Result<()> {
     let mut content = String::new();
     file.read_to_string(&mut content)?;
     println!("File contents: {}", content);
-    
+
     let mut bitset: [bool; 8] = [false; 8];
-    let mut indx: usize = 0; 
+    let mut indx: usize = 0;
     for c in content.chars() {
         match c {
             '0' => {
@@ -65,15 +65,17 @@ fn main() -> Result<()> {
                 bitset[indx] = true;
                 indx += 1;
             }
-            ' ' | '\n' => if indx == 8 {
-                print!("{}", (binary_to_decimal(bitset) as char));
-                indx = 0;
-                reset_binary(&mut bitset);
+            ' ' | '\n' => {
+                if indx == 8 {
+                    print!("{}", (binary_to_decimal(bitset) as char));
+                    indx = 0;
+                    reset_binary(&mut bitset);
+                }
             }
-            _ => print!("Error char!\n")
+            _ => print!("Error char!\n"),
         }
     }
-    
+
     //println!("Translated: {}", formatted_content);
     Ok(())
 }
