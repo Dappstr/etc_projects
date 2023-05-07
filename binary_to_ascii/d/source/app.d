@@ -10,10 +10,10 @@ int exp(int val, int exp) {
     return result;
 }
 
-    for (int i = 0; i < arr.length; ++i) {
+int binary_to_decimal(bool[] arr) {
     int decValue = 0;
     for (int i = 0; i < arr.length; ++i) {
-        decValue += arr[i] * (exp(2, cast(int) (arr.length - 1 - i)));
+        decValue += arr[i] * (exp(2, cast(int)(arr.length - 1 - i)));
     }
     return decValue;
 }
