@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Dappster"
+	],
+	"copyright": "Copyright © 2023, Lane Beals",
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "d"
+}
