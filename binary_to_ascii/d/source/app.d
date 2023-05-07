@@ -50,7 +50,6 @@ int main(string[] arg)
         }
         else if (current_char == ' ' || current_char == '\n') {
             write(cast(char)(binary_to_decimal(binary_value)));
-    }
         }
     }
 
